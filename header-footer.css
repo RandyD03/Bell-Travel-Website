@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@200&family=Mingzat&display=swap');
+* {
+    font-family: 'albert sans';
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+/*Header*/
+header {
+    min-height: 100vh;
+    height: 00px;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.2),rgba(4,9,30,1)),url(images/frank-mckenna-OD9EOzfSOh0-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.banner {
+    text-align: right;
+    padding-inline: 15px;
+    list-style-type: none;
+    background-color: white;
+}
+
+.left{
+    float: left;
+}
+
+/*Navigation Bar*/
+.navigation-bar {
+    width: 100%;
+    align-items: center;
+    background-color: white;
+    padding-bottom: 10px;
+}
+
+.navigation-bar li {
+    display: inline-block;
+    margin-inline: 40px;
+    font-size: 30px;
+    list-style-type: none;
+}
+
+.navigation-bar a:hover {
+    color: lightblue;
+}
+
+
+
+/*Footer*/
+.foot {
+    background:url(images/bg_footer.jpg) no-repeat;
+    background-position: center;
+    margin: 10px;
+    float:center;
+    width:1002px;
+    height:70px;
+}
+
+.foot p { 
+    float: left;
+    margin-right: 60px;
+    width: 650px;
+    margin-top: 15px;
+    padding-left: 50px;
+    font-family:"Microsoft YaHei";
+    line-height:1.6em;
+    font-size: 13px;
+    color:#333;
+    display:inline;
+}
+
+span.lan{ color:#0c5ba0;}
+
+/*Link styling*/
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
+  
