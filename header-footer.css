@@ -4,6 +4,7 @@
     color: black;
     margin: 0;
     padding: 0;
+    list-style-type: none;
 }
 
 /*Header*/
@@ -18,22 +19,24 @@ header {
 }
 
 .banner {
-    text-align: right;
-    padding-inline: 15px;
-    list-style-type: none;
+    text-align: left;
+    padding-inline: 12%;
+    padding-top: 15px;
+    padding-bottom: 15px;
     background-color: white;
 }
 
-.left{
+.logo{
     float: left;
+    padding-right: 45px;
+    background-color: white;
 }
 
 /*Navigation Bar*/
 .navigation-bar {
-    width: 100%;
-    align-items: center;
     background-color: white;
-    padding-bottom: 10px;
+    padding: 10px;
+    text-align: center;
 }
 
 .navigation-bar li {
@@ -50,29 +53,25 @@ header {
 
 
 /*Footer*/
+
 .foot {
-    background:url(images/bg_footer.jpg) no-repeat;
-    background-position: center;
-    margin: 10px;
-    float:center;
-    width:1002px;
-    height:70px;
+    padding: 25px;
+    margin: 50px;
 }
 
-.foot p { 
+.foot p {
+    max-width: 650px;
     float: left;
-    margin-right: 60px;
-    width: 650px;
-    margin-top: 15px;
-    padding-left: 50px;
-    font-family:"Microsoft YaHei";
-    line-height:1.6em;
-    font-size: 13px;
-    color:#333;
-    display:inline;
 }
 
-span.lan{ color:#0c5ba0;}
+.tico-img {
+    float: right;
+}
+
+span.lan { 
+    color:#0c5ba0;
+
+}
 
 /*Link styling*/
 a:link { text-decoration: none; }
