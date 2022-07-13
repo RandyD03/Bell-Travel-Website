@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@200&family=Mingzat&display=swap');
-* {
+* { 
     font-family: 'albert sans';
     color: black;
     margin: 0;
@@ -34,9 +34,11 @@ header {
 
 /*Navigation Bar*/
 .navigation-bar {
+    width: 100%;
     background-color: white;
     padding: 10px;
     text-align: center;
+    transition: all 0.3s;
 }
 
 .navigation-bar li {
@@ -46,8 +48,23 @@ header {
     list-style-type: none;
 }
 
+.navigation-bar li:hover {
+    color: lightblue;
+}
+
 .navigation-bar a:hover {
     color: lightblue;
+}
+
+.dropdown-menu {
+    position: absolute;
+    background-color: white;
+    border-radius: 0px 0px 4px 4px;
+}
+.dropdown-menu li {
+    display: block;
+    float: left;
+    font-size: 20px;
 }
 
 
