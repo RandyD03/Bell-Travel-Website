@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@200&family=Mingzat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 * { 
-    font-family: 'albert sans';
+    font-family: 'Poppins', sans-serif;
     color: black;
     margin: 0;
     padding: 0;
@@ -8,16 +8,6 @@
 }
 
 /*Header*/
-header {
-    min-height: 100vh;
-    height: 00px;
-    width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.2),rgba(4,9,30,1)),url(images/frank-mckenna-OD9EOzfSOh0-unsplash.jpg);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-}
-
 .banner {
     text-align: left;
     padding-inline: 12%;
@@ -43,8 +33,8 @@ header {
 
 .navigation-bar li {
     display: inline-block;
-    margin-inline: 40px;
-    font-size: 30px;
+    margin-inline: 30px;
+    font-size: 25px;
     list-style-type: none;
 }
 
@@ -57,15 +47,36 @@ header {
 }
 
 .dropdown-menu {
+    display: none;
     position: absolute;
     background-color: white;
     border-radius: 0px 0px 4px 4px;
+
 }
+
+.navigation-bar ul li:hover ul {
+    display: block;
+    position: absolute;
+    background-color: white;
+    border-radius: 0px 0px 4px 4px;
+    z-index: 100;
+
+}
+
+
 .dropdown-menu li {
     display: block;
-    float: left;
-    font-size: 20px;
+    font-size: 17px;
+    text-align: left;
+    padding: 5px;
 }
+
+/*Posters*/
+
+
+
+
+
 
 
 
@@ -83,11 +94,6 @@ header {
 
 .tico-img {
     float: right;
-}
-
-span.lan { 
-    color:#0c5ba0;
-
 }
 
 /*Link styling*/
