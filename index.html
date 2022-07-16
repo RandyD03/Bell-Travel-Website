@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 
 <!--HOME PAGE OF BELL TRAVEL WEBSITE, Created by: Randy Ding-->
-<html>
+<html lang="en" dir="ltr">
     <head>
         <title>Bell Travel</title>
         <link rel="stylesheet" href="header-footer.css"/>
         <link rel="stylesheet" href="body.css"/>
+        <meta charset="utf-8">
     </head>
 
 
@@ -28,12 +29,12 @@
                     <li><a href="carrentals.html">Car Rentals</a></li>
                     <li>Tours & Activities
                         <ul class="dropdown-menu">
-                            <li>Bus Tours</li>
+                            <li><a href="bustours.html">Bus Tours</a></li>
                         </ul>
                     </li>
                     <li>Services
                         <ul class="dropdown-menu">
-                            <li>Chinese Visa</li>
+                            <li><a href="chinesevisa.html">Chinese Visa</a></li>
                             <li>NEXUS Application</li>
                             <li>Flight schedules</li>
                         </ul>
@@ -54,16 +55,16 @@
                     <input type="radio" name="radio-btn" id="radio3">
                     <input type="radio" name="radio-btn" id="radio4">
                     <!--slide images-->
-                    <div class="slide-first">
-                        <img src="images/stock-poster 1.jpg" alt="">
+                    <div class="slide first">
+                        HOME
                     </div>
-                    <div class="slide">
+                    <div class="slide second">
                         <img src="images/stock-poster 2.jpg" alt="">
                     </div>
-                    <div class="slide">
+                    <div class="slide third">
                         <img src="images/stock-poster 3.jpg" alt="">
                     </div>
-                    <div class="slide">
+                    <div class="slide fourth">
                         <img src="images/stock-poster 4.jpg" alt="">
                     </div>
                     <!--auto navigate-->
@@ -76,10 +77,22 @@
                 </div>
                 <!--manual navigate-->
                 <div class="navigate-manual">
-                    
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
                 </div>
             </div>
-
+            <script type="text/javascript">
+                var counter = 1;
+                setInterval(function(){
+                    document.getElementById('radio' + counter).checked = true;
+                    counter++;
+                    if(counter > 4){
+                        counter = 1;
+                    }
+                }, 6000);
+            </script>
 
 
         </div>
