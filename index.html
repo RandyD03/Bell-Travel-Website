@@ -5,8 +5,10 @@
     <head>
         <title>Bell Travel</title>
         <link rel="stylesheet" href="header-footer.css"/>
-        <link rel="stylesheet" href="body.css"/>
+        <link rel="stylesheet" href="home.css"/>
         <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="parallax.min.js"></script>
     </head>
 
 
@@ -26,17 +28,25 @@
                     <li><a href="packages.html">Packages</a></li>
                     <li><a href="flights.html">Flights</a></li>
                     <li><a href="cruises.html">Cruises</a></li>
-                    <li><a href="carrentals.html">Car Rentals</a></li>
+                    <li><a href="carrental.html">Car Rentals</a></li>
                     <li>Tours & Activities
                         <ul class="dropdown-menu">
                             <li><a href="bustours.html">Bus Tours</a></li>
+                            <li>Sight Seeing</li>
                         </ul>
                     </li>
                     <li>Services
                         <ul class="dropdown-menu">
                             <li><a href="chinesevisa.html">Chinese Visa</a></li>
                             <li>NEXUS Application</li>
-                            <li>Flight schedules</li>
+                            <li>
+                                Flight schedules
+                                <ul class="sub-menu">
+                                    <li>Toronto Departures</li>
+                                    <li>Hamilton Departures</li>
+                                    <li>Vancouver Departures</li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
                     <li><a href="contact.html">Contact</a></li>
@@ -44,9 +54,11 @@
             </nav>
         </header>
 
+        <!--............-->
         <!--Body of page-->
         <!--............-->
         <div class="context">
+            <!--Slider-->
             <div class="slider">
                 <div class="slides">
                     <!--Radio buttons-->
@@ -93,18 +105,98 @@
                     }
                 }, 6000);
             </script>
-
-
+            <!--Main Packages-->
+            <div class="main-packages-section">
+                <h2 class="title">Main Packages</h2>
+                <p class="paragraph">Every week we offer you the best discounts and personalized packages.
+                <br>Trips include niagra falls to international destinations.
+                </p>
+                <ul class="grid main-packages">
+                    <li>
+                        <img src="images/stock-crowne-plaza-niagara-falls-3114408472-3x2.jpg" height="400px">
+                        <h3>Niagra Falls 3 day</h3>
+                        <p>This is a short description of the package. It should be this long. blah blah blah testing testing.</p>
+                        <button type="button"><a href="packages.html">VIEW MORE</a></button>
+                    </li>
+                    <li>
+                        <img src="images/stock-crowne-plaza-niagara-falls-3114408472-3x2.jpg" height="400px">
+                        <h3>Niagra Falls 3 day</h3>
+                        <p>This is a short description of the package. It should be this long. blah blah blah testing testing.</p>
+                        <button type="button"><a href="packages.html">VIEW MORE</a></button>
+                    </li>
+                    <li>
+                        <img src="images/stock-crowne-plaza-niagara-falls-3114408472-3x2.jpg" height="400px">
+                        <h3>Niagra Falls 3 day</h3>
+                        <p>This is a short description of the package. It should be this long. blah blah blah testing testing.</p>
+                        <button type="button" class="view-all"><a href="packages.html">VIEW MORE</a></button>
+                    </li>
+                </ul>
+                <button type="button"><a href="packages.html">VIEW ALL PACKAGES</a></button>
+            </div>
+        <!--flights-->
+            <div class="parallax-window" data-parallax="scroll" data-image-src="images\stock-toronto-pearson-international-airport-departures.jpg">
+                <div class="flights-section">
+                    <h2 class="flights title">Flights</h2>
+                    <p class="flights paragraph">Let our team find the best deal and route for your flight.<br>
+                    Flights from Vancouver, Toronto, Hamilton to global destinations to start your journey across the world.
+                    </p>
+                    <button type="button" class="flight-btn"><a href="flights.html">BOOK YOUR FLIGHT</a></button>
+                </div>
+            </div>
+        <!--Other Bookings-->
+            <div class="other-bookings-section">
+                <ul class="grid other-bookings">
+                    <li class="cruises">
+                        <h2 class="title">Cruises</h2>
+                        <img src="images/ship.png" height="50px">
+                        <p>Check out our cruises from this to that. Short description of cruises.</p>
+                        <button type="button"><a href=cruises.html>VIEW CRUISES</a></button>
+                    </li>
+                    <li class="tours-and-activities">
+                        <h2 class="title">Tours & Activities</h2>
+                        <p>Enjoy top attractions with our tours and activities.</p>
+                        <button type="button"><a href=bustours.html>BUS TOURS</a></button>
+                        <button type="button"><a href=sightseeing.html>SIGHT SEEING</a></button>
+                    </li>
+                    <li class="car-rentals">
+                        <h2 class="title">Car Rentals</h2>
+                        <p>Rent your car with the most trusted car rental companies.</p>
+                        <ul>
+                            <li><img src="images/dollar.png" height="40px"></li>
+                            <li><img src="images/guerin.png" height="40px"></li>
+                            <li><img src="images/hertz.png" height="40px"></li>
+                            <li><img src="images/caldas.png" height="40px"></li>
+                            <li><img src="images/auto_rent.png" height="40px"></li>
+                            <li><img src="images/auto_europe.png" height="40px"></li>
+                        </ul>
+                        <button type="button"><a href="carrental.html">VIEW CAR RENTALS</a></button>
+                    </li>
+                </ul>
+            </div>
+            <div class="blog-container">
+                <h2>Our Blog</h2>
+                <a href="blog.html">
+                    <div class="blog">
+                        <h1 class="white">ENGLISH WEBSITE INAUGURATION</h1>
+                        <p class="white">7/20/2022</p>
+                        <ul>
+                            <li><img src="images/img_avatar2.png" alt="Avatar" class="pfp" height="40px"></li>
+                            <li class="white line">Bob Joe</li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
         </div>
-                
+             
 
         <!--footer of page-->
         <footer>
             <div class="foot">
-                <p>copyright@ 2016 belltravelbrantford travel ltd.all rights reserved.career HST/GST#842618506RT0001    TICO#50020607 |
-                <span class="lan"><a href="https://www.tico.ca/about-tico/policies/privacy-policy.html#:~:text=TICO%20has%20the%20authority%20to,fulfill%20its%20consumer%20protection%20mandate.">privacy policy</a></span> | <span class="lan">terms & conditions</span></p>
-                <img class="tico-img"src="images/tico.jpg" />
-             </div>
+                <p class="creater-name">Made by Randy Ding</p>
+                <p>copyright@ 2016 belltravelbrantford travel ltd.all rights reserved.career HST/GST#842618506RT0001    TICO#50020607 | 
+                <a href="https://www.tico.ca/about-tico/policies/privacy-policy.html#:~:text=TICO%20has%20the%20authority%20to,fulfill%20its%20consumer%20protection%20mandate." class="white">privacy policy</a> | terms & conditions</p>
+                <img class="tico-img"src="images/tico-logo-footer.png" height="40px"/>
+            </div>
         </footer>
     </body>
 
