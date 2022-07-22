@@ -42,13 +42,80 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-            contact
         </header>
 
         <!--Body of page-->
-        <div class="contact-form">
 
+        <!--Contact form-->
+        <div class="containerl">
+            <div class="contact-form">
+                <form onsubmit="sendEmail(); reset(); return false;">
+                    <h3>CONTACT US</h3>
+                    <input type="text" id="first-name" placeholder="First Name*" required>
+                    <input type="text" id="last-name" placeholder="Last Name*" required>
+                    <input type="email" id="email" placeholder="Email*" required>
+                    <input type="text" id="subject" placeholder="Subject">
+                    <textarea id="message" rows="4" placeholder="Message*" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+            <script src="https://smtpjs.com/v3/smtp.js"></script>
+            <script>
+                function sendEmail(){
+                    Email.send({
+                        Host : "smtp.elasticemail.com",
+                        Username : "dingrandy6@gmail.com",
+                        Password : "1AF35326161BA3B3D89F2539D568457711FA",
+                        To : "lucyzhao2017@gmail.com",
+                        From : document.getElementById("email").value,
+                        Subject : document.getElementById("subject").value,
+                        Body : "Name:" + document.getElementById("first-name").value + " " + document.getElementById("last-name").value
+                                + "<br> Email:" + document.getElementById("email").value
+                                + "<br> Subject:" + document.getElementById("subject").value
+                                + "<br> Message:" + document.getElementById("message").value
+                    }).then(
+                    message => alert(message)
+                    );
+                }
+            </script>
+
+        <!--Contact info-->
+        <div class="info">
+                <h4>Hours:</h4>
+                <table>
+                    <tr>
+                        <td>Monday</td>
+                        <td>Closed</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>Closed</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>Closed</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>Closed</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>Closed</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>Closed</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>Closed</td>
+                    </tr>
+                </table>
         </div>
+    </div>
+
+
 
         <!--footer of page-->
         <footer>
